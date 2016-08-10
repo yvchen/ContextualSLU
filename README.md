@@ -56,7 +56,7 @@ Yun-Nung (Vivian) Chen, y.v.chen@ieee.org
 Main papers to be cited
 ```
 @Inproceedings{chen2016end,
-  author    = {Chen, Yun-Nung and Hakkani-Tur, Dilek and Tur, Gokhan and Gao, Jianfeng and Li, Deng},
+  author    = {Chen, Yun-Nung and Hakkani-Tur, Dilek and Tur, Gokhan and Gao, Jianfeng and Deng, Li},
   title     = {End-to-End Memory Networks with Knowledge Carryover for Multi-Turn Spoken Language Understanding},
   booktitle = {Proceedings of Interspeech},
   year      = {2016}
