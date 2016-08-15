@@ -20,8 +20,7 @@ where the history utterances are encoded as vectors and stored into memory cells
 4. H5py `pip install h5py`
 
 ## Dataset
-1. Train: word sequences with IOB slot tags and the intent label (data/atis.train.w-intent.iob)
-2. Test: word sequences with IOB slot tags and the intent label (data/atis.test.w-intent.iob)
+1. Train/Test: word sequences with IOB slot tags and the indicator of the dialogue start point (1: starting point; 0: otherwise) `data/cortana.communication.5.[train/dev/test].iob`
 
 
 ## Getting Started
@@ -33,19 +32,15 @@ You can train and test JointSLU with the following commands:
 ```
 You can run a sample tutorial with this command:
 ```shell
-  bash script/run_sample.sh rnn theano 0 | sh
+  bash script/run_sample.sh memn2n-c-gru theano 0 | sh
 ```
-Then you can see the predicted result in `sample/rnn+emb_H-50_O-adam_A-tanh_WR-embedding.test.3`.
+Then you can see the predicted result in `sample/rnn+emb_H-100_O-adam_A-tanh_WR-embedding.test.3`.
 
 ## Model Running
 To reproduce the work described in the paper.
-You can run the slot filling only experiment using BLSTM by:
+You can run the baseline slot filling w/o contextual information using GRU by:
 ```shell
-  bash script/run_slot.sh blstm theano 0 | sh
-```
-You can run the joint frame parsing (intent prediction and slot filling) experiment using BLSTM by:
-```shell
-  bash script/run_joint.sh blstm theano 0 | sh
+  bash script/run_sample.sh gru theano 0 | sh
 ```
 
 ## Contact
