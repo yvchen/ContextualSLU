@@ -1,0 +1,5 @@
+BOS Send an email. EOS	O O O O O	1
+BOS John . EOS	O B-send_email.contact_name O O	0
+BOS The 1st one. EOS	O O B-send_email.position_ref O O	0
+BOS Subject . EOS	O B-send_email.slot_attribute O O	0
+BOS This is the message . EOS	O B-send_email.message I-send_email.message I-send_email.message I-send_email.message O O	0
